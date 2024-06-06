@@ -18,18 +18,6 @@ const customTheme = createTheme({
       dark: "#64dd17",
       contrastText: "#fff",
     },
-    error: {
-      light: red[300],
-      main: red[500],
-      dark: red[700],
-      contrastText: "#fff",
-    },
-    warning: {
-      light: deepOrange[300],
-      main: deepOrange[500],
-      dark: deepOrange[700],
-      contrastText: "#000",
-    },
     info: {
       light: grey[300],
       main: grey[500],
@@ -159,16 +147,6 @@ const customTheme = createTheme({
             boxShadow: "0 2px 10px #6ADF1E8c",
           },
           backdropFilter: "blur(10px)",
-        },
-      },
-    },
-    MuiAppBar: {
-      styleOverrides: {
-        root: {
-          background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
-          "&:hover": {
-            background: "linear-gradient(45deg, #FF8E53 30%, #FE6B8B 90%)",
-          },
         },
       },
     },
