@@ -102,10 +102,10 @@ const customTheme = createTheme({
         fontSize: "1rem",
       },
       [baseTheme.breakpoints.up("md")]: {
-        fontSize: "1.15rem",
+        fontSize: "1.10rem",
       },
       fontWeight: 300,
-      color: "#ffffff9c",
+      color: "#ffffff6c",
     },
     button: {
       textTransform: "none",
