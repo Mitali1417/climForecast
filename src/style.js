@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material/styles";
-import { deepOrange, grey, lightGreen, red } from "@mui/material/colors";
+import { grey } from "@mui/material/colors";
 
 const baseTheme = createTheme();
 
@@ -16,18 +16,6 @@ const customTheme = createTheme({
       light: "#ccff90",
       main: "#b2ff59",
       dark: "#64dd17",
-      contrastText: "#fff",
-    },
-    info: {
-      light: grey[300],
-      main: grey[500],
-      dark: grey[700],
-      contrastText: "#000",
-    },
-    success: {
-      light: lightGreen[300],
-      main: lightGreen[500],
-      dark: lightGreen[700],
       contrastText: "#fff",
     },
     background: {
@@ -87,7 +75,7 @@ const customTheme = createTheme({
         fontSize: "1.25rem",
       },
       fontWeight: 400,
-      color: grey[600],
+      color: grey[400],
     },
     body2: {
       fontFamily: '"Quicksand",sans-serif',
@@ -106,6 +94,18 @@ const customTheme = createTheme({
       },
       fontWeight: 300,
       color: "#ffffff6c",
+    },
+    body4: {
+      fontFamily: '"Quicksand",sans-serif',
+      fontSize: "0.9rem",
+      [baseTheme.breakpoints.up("sm")]: {
+        fontSize: "1rem",
+      },
+      [baseTheme.breakpoints.up("md")]: {
+        fontSize: "1.10rem",
+      },
+      fontWeight: 300,
+      color: "#ffffffc2",
     },
     button: {
       textTransform: "none",

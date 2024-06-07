@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   overflow-x: hidden;
-  background-color: rgba(255, 140, 0, 0.7);
 }
 ::selection {
   color: white;
   background-color: #b2ff598c;
 }
 ::-webkit-scrollbar {
-  width: 10px;
-  padding: 2px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-thumb {

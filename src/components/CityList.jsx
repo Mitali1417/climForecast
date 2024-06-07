@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Paper, Stack, Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 
 const CityList = ({ onCitySelect }) => {
   const citiesURL =
@@ -33,7 +32,6 @@ const CityList = ({ onCitySelect }) => {
     }
   };
 
-  const theme = useTheme();
 
   return (
     <Stack
@@ -50,8 +48,6 @@ const CityList = ({ onCitySelect }) => {
       {data.map((item) => (
         <Paper
           elevation={6}
-          mx={2}
-          bgcolor="#111b3b"
           sx={{
             display: "flex",
             justifyContent: "center",

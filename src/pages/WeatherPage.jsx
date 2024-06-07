@@ -4,7 +4,6 @@ import CityDetail from "../components/CityDetail";
 import WeatherDetail from "../components/WeatherDetail";
 import Box from "@mui/material/Box";
 import BackArrow from "../assets/back-arrow.svg";
-import { Button } from "@mui/material";
 
 const WeatherPage = () => {
   const { name, countryCode, lat, lon } = useParams();
@@ -13,13 +12,13 @@ const WeatherPage = () => {
     lat: parseFloat(lat),
     lon: parseFloat(lon),
   };
-  const apiKey = "b178065235f8bf8e97088c2bb2b6ba92";
+  const apiKey = process.env.REACT_APP_API_KEY || "b178065235f8bf8e97088c2bb2b6ba92";
 
+  
   return (
     <Box
       width="100vw"
       minHeight={{ md: "100vh" }}
-      // height="100%"
       py={4}
       overflow="auto"
       component="section"

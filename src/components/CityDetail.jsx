@@ -9,6 +9,7 @@ const CityDetail = ({ city }) => {
       alignItems="center"
       flexDirection="column"
       pt={{ xs: 2, md: 0 }}
+      px={2}
       pb="2rem"
       sx={{ textAlign: { xs: "center", md: "left" } }}
     >

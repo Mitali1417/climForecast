@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import CityList from "../components/CityList";
 import { Box, Typography, Button } from "@mui/material";
 import heroImg from "../assets/hero1.png";
-import customTheme from "../style";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -24,8 +23,7 @@ const HomePage = () => {
   };
 
   return (
-    <Box
-    overflow="hidden" position="relative">
+    <Box overflow="hidden" position="relative">
       <Box
         component="section"
         display="flex"

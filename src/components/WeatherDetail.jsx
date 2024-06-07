@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Box, Divider, Paper, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import customTheme from "../style";
 
 const WeatherDetail = ({ lat, lon, apiKey }) => {
@@ -106,7 +106,6 @@ const WeatherDetail = ({ lat, lon, apiKey }) => {
         mx={{ md: 2 }}
         sx={{
           fontSize: { xs: "10rem", sm: "15rem" },
-          // bgcolor: "#ffffff3c",
           boxShadow: { md: "0 0px 28px #6ADF1E7c" },
           border: { md: "1.5px solid #6ADF1E" },
           borderRadius: "0.5rem",
@@ -145,7 +144,6 @@ const WeatherDetail = ({ lat, lon, apiKey }) => {
         mx={{ md: 2 }}
         width={{ xs: "100%", md: "60%" }}
         height={{ xs: "100%", md: "30rem" }}
-        // bgcolor="#ffffff2c"
       >
         <Box
           mx={{ md: 2 }}
@@ -159,7 +157,6 @@ const WeatherDetail = ({ lat, lon, apiKey }) => {
           sx={{
             width: "100%",
             background: customTheme.palette.background.main,
-            // boxShadow: "0 0px 10px #6ADF1E5c",
             border: "1.5px solid #6ADF1E5c",
             borderRadius: "0.5rem",
             position: "relative",
@@ -170,7 +167,6 @@ const WeatherDetail = ({ lat, lon, apiKey }) => {
             display="flex"
             justifyContent="center"
             flexDirection="column"
-            // bgcolor="#ffffff3c"
             zIndex="10"
             px={4}
             sx={{
@@ -242,10 +238,10 @@ const WeatherDetail = ({ lat, lon, apiKey }) => {
                   height: "100%",
                 }}
               >
-                <Typography variant="body3">
+                <Typography variant="body4">
                   Minimum Temp: {Math.round(weather.main.temp_min - 273.15)}°C
                 </Typography>
-                <Typography variant="body3">
+                <Typography variant="body4">
                   Maximum Temp: {Math.round(weather.main.temp_max - 273.15)}°C
                 </Typography>
               </Box>
@@ -260,10 +256,10 @@ const WeatherDetail = ({ lat, lon, apiKey }) => {
                   height: "100%",
                 }}
               >
-                <Typography variant="body3">
+                <Typography variant="body4">
                   Pressure: {weather.main.pressure} hPa
                 </Typography>
-                <Typography variant="body3">
+                <Typography variant="body4">
                   Humidity: {weather.main.humidity}%
                 </Typography>
               </Box>
