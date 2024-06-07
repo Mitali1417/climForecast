@@ -24,7 +24,8 @@ const HomePage = () => {
   };
 
   return (
-    <>
+    <Box
+    overflow="hidden" position="relative">
       <Box
         component="section"
         display="flex"
@@ -34,11 +35,10 @@ const HomePage = () => {
         zIndex="10"
         sx={{
           width: "100%",
-          overflow: "hidden",
+          overflowX: "hidden",
           padding: { xs: "1rem 1rem", md: "2rem 2rem" },
         }}
       >
-        {/* <Navbar/> */}
         <Box
           component="section"
           display="flex"
@@ -129,7 +129,7 @@ const HomePage = () => {
       </Box>
       <div className="gradient-1" />
       <div className="gradient-2" />
-    </>
+    </Box>
   );
 };
 
