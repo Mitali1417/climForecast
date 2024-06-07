@@ -43,8 +43,8 @@ const CityList = ({ onCitySelect }) => {
       flexWrap="wrap"
       justifyContent="center"
       useFlexGap
-      p={2}
-      m={2}
+      p={{ md: 2 }}
+      m={{ md: 2 }}
       sx={{ width: "100%", minHeight: "100vh", zIndex: "10" }}
     >
       {data.map((item) => (
@@ -53,16 +53,23 @@ const CityList = ({ onCitySelect }) => {
           mx={2}
           bgcolor="#111b3b"
           sx={{
-            width: { xs: "100%", sm: "40%", md: "30%"},
-            height: {xs:"100%", sm:"10rem"},
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            width: { xs: "100%", sm: "40%", md: "30%" },
+            height: { xs: "100%", sm: "12rem" },
             flexBasis: "1",
           }}
           key={item.value}
           onClick={() => onCitySelect(item)}
         >
-          <Typography variant="h3" py={2}>{item.label}</Typography>
-          <Typography variant="body3">Population: {item.population}</Typography><br />
-          <Typography variant="body3" pb={2}>Timezone: {item.timezone}</Typography>
+          <Typography variant="h3" py={2}>
+            {item.label}
+          </Typography>
+          <Typography variant="body3">Population: {item.population}</Typography>
+          <Typography variant="body3" pb={2}>
+            Timezone: {item.timezone}
+          </Typography>
         </Paper>
       ))}
     </Stack>
